@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main {
 
-    private static final String[] romanNumerals = {
+    static final String[] romanNumerals = {
             "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X",
             "XI", "XII", "XIII", "XIV", "XV", "XVI", "XVII", "XVIII", "XIX", "XX",
             "XXI", "XXII", "XXIII", "XXIV", "XXV", "XXVI", "XXVII", "XXVIII", "XXIX", "XXX",
@@ -15,7 +15,7 @@ public class Main {
             "XCI", "XCII", "XCIII", "XCIV", "XCV", "XCVI", "XCVII", "XCVIII", "XCIX", "C"
     };
 
-    private static final int[] arabicValues = {
+    static final int[] arabicValues = {
             1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
             11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
             21, 22, 23, 24, 25, 26, 27, 28, 29, 30,
@@ -44,7 +44,7 @@ public class Main {
 
     }
 
-    static String calc(String input) throws Exception {
+    public static String calc(String input) throws Exception {
 
         String[] numbers = input.split(" ");
         if (numbers.length != 3) {
